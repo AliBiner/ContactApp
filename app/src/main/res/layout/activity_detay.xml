@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetayActivity">
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvDetayAdi"
+            app:layout_constraintTop_toBottomOf="@+id/ivDetayProfil" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            android:id="@+id/ivDetayProfil"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvDetayEmail"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetayAdi" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="25dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvDetayTelefon"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetayEmail" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="25dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvDetayNot"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetayTelefon" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="25dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:foreground="@drawable/ic_baseline_delete_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnSil"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="40dp"
+            android:layout_marginStart="40dp" app:layout_constraintStart_toStartOf="parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:text="Ara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAra"
+            android:src="@drawable/ic_baseline_phone_enabled_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="40dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

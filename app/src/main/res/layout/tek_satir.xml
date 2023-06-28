@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/rlIcerik"
+
+>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="false"
+            android:id="@+id/ivProfil"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAdi"
+        android:text="@string/tvAdi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="7dp"
+        android:layout_marginTop="20dp"
+    >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTelefon"
+        android:layout_below="@id/tvAdi"
+        android:text="@string/tvTelefonHint"
+        android:textSize="19sp"
+        android:paddingLeft="7dp"
+        android:layout_marginLeft="110dp"
+    >
+    </TextView>
+
+    <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:foreground="@drawable/ic_baseline_more_vert_24"
+            android:id="@+id/tvID"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:gravity="center"
+    >
+
+    </TextView>
+
+
+
+</RelativeLayout>
